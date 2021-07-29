@@ -1,0 +1,97 @@
+body,
+html {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 0.5rem;
+}
+
+.navbar__icon {
+  width: 25px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+}
+
+.search {
+  display: flex;
+}
+
+.search__icon,
+.filter__icon {
+  width: 20px;
+  padding: 0.5rem 0.4rem;
+  background-color: #f3f3f5;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.filter__icon {
+  margin-left: 0.5rem;
+  border-radius: 5px;
+}
+
+.search__input {
+  border: none;
+  background-color: #f3f3f5;
+  padding: 0.5rem;
+  border-radius: 0 5px 5px 0;
+  flex-grow: 1;
+}
+
+.navbar-bottom {
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background: rgb(249, 72, 100);
+  background: linear-gradient(
+    184deg,
+    rgba(249, 72, 100, 1) 15%,
+    rgba(242, 55, 84, 1) 87%
+  );
+}
+
+.navbar-bottom__icon {
+  width: 25px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-bottom__icon--active {
+  border-bottom: 2px solid #ffffffb7;
+}
+
+.discounts p {
+  font-size: 0.8em;
+}
+
+.wallet {
+  text-align: center;
+}
+
+.wallet h1 {
+  text-align: left;
+}
+
+.wallet__money {
+  font-weight: bold;
+  font-size: 4em;
+  color: #535353;
+}
